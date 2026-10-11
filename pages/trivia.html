@@ -5,7 +5,7 @@
         <title>Trivia!</title>
 
         <link rel="stylesheet" href="../css/base.css">
-        <link rel="stylesheet" href="../css/pages/trivia.css">
+        <link rel="stylesheet" href="../css/trivia.css">
         <script src="../js/trivia.js" defer></script>
 
         <style>
@@ -19,7 +19,9 @@
         <header>
             Trivia!
         </header>
+
         <p>Test your knowledge by answering these questions, or go <a href="../index.html">back</a> to the homepage.</p>
+
         <div class="heading">
             Part 1: Multiple Choice Questions
             <hr>
@@ -53,7 +55,6 @@
             Part 2: Short Answer Questions
             <hr>
         </div>
-        
         <div class="question" style="--tb-width: 80px;">
             <p class="question">1. How many letters does "Cascaded" have?</p>
             <p id="outputQn3"></p>
@@ -67,7 +68,5 @@
             <input class="tb" type="number" min="0" max="20" id="inputQn4" placeholder="Answer">
             <button id="buttonQn4" onclick="checkTextAnswer('inputQn4','720','outputQn4', 'buttonQn4')">Submit</button>
         </div>
-        
     </body>
-    
 </html>

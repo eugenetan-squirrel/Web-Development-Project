@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat</title>
+
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/chat.css">
+        <script type="module" src="../js/chat.js" defer></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Chat</h1>
+        </header>
+
+        <p>Connect with others real-time here, or go <a href="../index.html">back</a> to the homepage.</p>
+
+        <div class="nameInputContainer">
+            <label>Input your name:</label>
+            <input type="text" id="nameInput" name="name">
+            <button for="nameInput" type="submit" id="enterChatButton">Enter chat</button>
+        </div>
+
+        <p id="nameError" class="error-message"></p>
+
+        <div class="chatContainer">
+            <div class="textMsgs">
+            </div>
+
+            <div class="inputMsgContainer">
+                <input type="text" id="msgInput" name="msg" placeholder="Enter your message here...">
+                <button for="msgInput" type="submit" id="sendMsgButton">Send</button>
+            </div>
+        </div>
+    </body>
+</html>

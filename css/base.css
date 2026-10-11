@@ -5,7 +5,9 @@ header {
     text-align: center;
 }
 
-html, body, button {
+html,
+body,
+button {
     font-family: "Verdana", sans-serif;
 }
 
@@ -13,7 +15,8 @@ body {
     margin: 8px;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: red;
     text-decoration: none;
 }
