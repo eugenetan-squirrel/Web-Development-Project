@@ -1,21 +1,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 
-import {
-    getAuth,
-    signInAnonymously,
-} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
 
 import {
     getDatabase,
     ref,
     push,
-    set,
     serverTimestamp,
-    query,
-    orderByChild,
-    limitToLast,
     onChildAdded,
-    onChildChanged,
     onChildRemoved,
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js";
 
