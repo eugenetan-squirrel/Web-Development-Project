@@ -1,0 +1,32 @@
+header {
+    padding: 20px;
+    background-color: skyblue;
+    font: normal 40px/1 "BBH Bartle", sans-serif;
+    text-align: center;
+}
+
+html, body, button {
+    font-family: "Verdana", sans-serif;
+}
+
+body {
+    margin: 8px;
+}
+
+a, a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color:lime;
+    text-decoration: underline;
+}
+
+button {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: var(--btn-width, 200px);
+}

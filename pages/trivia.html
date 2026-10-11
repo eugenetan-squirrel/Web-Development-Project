@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Trivia!</title>
+
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/pages/trivia.css">
+        <script src="../js/trivia.js" defer></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            Trivia!
+        </header>
+        <p>Test your knowledge by answering these questions, or go <a href="../index.html">back</a> to the homepage.</p>
+        <div class="heading">
+            Part 1: Multiple Choice Questions
+            <hr>
+        </div>
+
+        <div class="question">
+            <p class="question">1.What is the approximate ratio of sheep to people in New Zealand?</p>
+            <p id="userAnsQn2"></p>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, '#userAnsQn2')" class="option">5.5 sheep per person</button>
+                <button onclick="checkAnswer(this, '#userAnsQn2')" class="option" data-correct="true">4.5 sheep per person</button>
+                <button onclick="checkAnswer(this, '#userAnsQn2')" class="option">3.5 sheep per person</button>
+                <button onclick="checkAnswer(this, '#userAnsQn2')" class="option">2.5 sheep per person</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="question">2. In which country is it illegal to own only a one guinea pig, as a lone guinea pig might get lonely?</p>
+            <p id="userAnsQn3"></p>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, '#userAnsQn3')" class="option">New Zealand</button>
+                <button onclick="checkAnswer(this, '#userAnsQn3')" class="option" data-correct="true">Switzerland</button>
+                <button onclick="checkAnswer(this, '#userAnsQn3')" class="option">France</button>
+                <button onclick="checkAnswer(this, '#userAnsQn3')" class="option">Germany</button>
+            </div>
+        </div>
+
+        <div class="heading">
+            Part 2: Short Answer Questions
+            <hr>
+        </div>
+        
+        <div class="question" style="--tb-width: 80px;">
+            <p class="question">1. How many letters does "Cascaded" have?</p>
+            <p id="outputQn3"></p>
+            <input class="tb" type="number" min="0" max="20" id="inputQn3" placeholder="Answer">
+            <button id="buttonQn3" onclick="checkTextAnswer('inputQn3','8','outputQn3', 'buttonQn3')">Submit</button>
+        </div>
+
+        <div class="question">
+            <p class="question">2. What is the value of 6 factorial?</p>
+            <p id="outputQn4"></p>
+            <input class="tb" type="number" min="0" max="20" id="inputQn4" placeholder="Answer">
+            <button id="buttonQn4" onclick="checkTextAnswer('inputQn4','720','outputQn4', 'buttonQn4')">Submit</button>
+        </div>
+        
+    </body>
+    
+</html>

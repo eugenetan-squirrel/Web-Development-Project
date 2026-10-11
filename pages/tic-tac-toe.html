@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/pages/tic-tac-toe.css">
+        <script src="../js/tic-tac-toe.js" defer></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            Tic Tac Toe
+        </header>
+        <p>Play a game of Tic Tac Toe (with yourself) here, or go <a href="../index.html">back</a> to the homepage.</p>
+        <div class="main">
+            <div class="board">
+            <div id="cell1" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell2" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell3" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell4" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell5" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell6" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell7" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell8" class="cell" onclick="makeMove(this)"></div>
+            <div id="cell9" class="cell" onclick="makeMove(this)"></div>
+        </div>
+        <button id="resetButton" onclick="resetGame()" style="display: none; text-align: center;">Reset Game</button>
+        <p id="gameStatus" style="margin-top: 0px; text-align: center;"></p>
+        </div>   
+    </body>
+    
+</html>

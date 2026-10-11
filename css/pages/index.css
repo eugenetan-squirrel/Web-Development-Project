@@ -1,0 +1,25 @@
+.card-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    padding: 15px;
+    background-color: #202b40;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid #39465f;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000030;
+}
+
+.card h2 {
+    margin-top: 0;
+}
